@@ -8,17 +8,17 @@ Es un tipo de procedimiento almacenado que se ejecuta
 --Diferencia entre procedure store con trigger y restricciones
 /*
 - no pueden ser invocados directamente; al intentar modificar los datos de una tabla para la que se ha definido un disparador, 
-el disparador se ejecuta automáticamente.
-- no reciben y retornan parámetros.
+el disparador se ejecuta automÃ¡ticamente.
+- no reciben y retornan parÃ¡metros.
 A diferencia de las restricciones "check", pueden hacer referencia a campos de otras tablas
 */
 
 --Proceso
--- se ejecutan DESPUES de la ejecución de una instrucción
+-- se ejecutan DESPUES de la ejecuciÃ³n de una instrucciÃ³n
 -- "insert", "update" o "delete" en la tabla.
 
 --Estructura
--- create triggre Nombretrigger
+-- create trigger Nombretrigger
  -- on Tabla
  -- for EVENTO  [insert, update o delete]
  --as 
@@ -32,7 +32,7 @@ Tabla --> Almacen
 			1 aceite 17.78 60
 						
 Tabla Ventas -- insert 20 aceites
-	--cuando se inserte en la tabkla ventas
+	--cuando se inserte en la tabla ventas
 	update la tabla almacen
 	
 	
