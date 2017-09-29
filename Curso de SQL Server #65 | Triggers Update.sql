@@ -17,9 +17,7 @@ on TablaVentas --Indicamos la tabla donde se activara la accion
 for update --Despues de insertar en la TablaVentas
 as
 	begin --Comienza las sentencias
-		declare @total int --Declaramos una variable int
-			set @total = (select sum(cantidad) from TablaVentas) --obtenemos la suma de las cantidades y lo asignamos a la variable
-				insert into TablaTotales values(1)
+		insert into TablaTotales values(1)
 	end --finalizan las sentecias
 		--fin Trigger--
 
